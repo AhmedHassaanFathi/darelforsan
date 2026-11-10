@@ -1,0 +1,103 @@
+body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .font-heading {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    /* شريط تمرير ناعم ومريح */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    .custom-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* تأثيرات بصرية متقدمة للبطاقات والرسومات */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .domain-card-glow {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .domain-card-glow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px -10px rgba(11, 37, 58, 0.12), 0 10px 15px -5px rgba(11, 37, 58, 0.05);
+    }
+
+    .shimmer-badge {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    .pulse-dot {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55);
+      animation: pulseGreen 3s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0% {
+        transform: scale(0.97);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        transform: scale(0.97);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
